@@ -3,10 +3,10 @@
 /**1、work2pcのレイアウトを作ってみる。
 幅960px 背景色#eeeeee */
 
-.body {
+body {
   max-width: 960px;
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
   background-color: #eeeeee;
 }
 
@@ -22,30 +22,29 @@
 .box {
   max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .card {
-  max-width: 330px;
-  margin: 20px;
-  padding: 15px;
+  width: 32%;
+  /* padding: 15px; */
   background-color: #ffffff;
 }
-
 .card-img {
-  width: 330px;
+  width: 100%;
   margin: 0 0 5px 0;
   height: auto;
   background-size: cover;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .card-content {
-  flex-wrap: wrap;
-  background: #ffffff;
+  /* flex-wrap: wrap; */
+  /* background: #ffffff; */
+  padding: 0 10px;
 }
 
 .card-title {
@@ -54,24 +53,24 @@
   font-size: x-large;
   font-weight: bold;
   color: rgb(40, 132, 134);
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .card-text {
-  width: 330px;
+  /* width: 330px; */
   flex-wrap: wrap;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 /*2、400px以下で縦に並べる。（work2pcのレイアウトに変更）
 画像が330pxしかないのでwidth:100%で無理やり広げてください。 */
 
 @media screen and (max-width: 400px) {
-  body {
+  .box {
     flex-direction: column;
   }
-}
-.card {
-  width: 100%;
-  margin: 0;
+  .card {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
 }

@@ -11,17 +11,21 @@
 
 <body>
     <script>
-        // １、繰り返し構文で1~10までの数字を足してみよう。もし、すべて足した値が20以上なら、consoleログに「20以上」と出力。20未満なら20未満と出力しよう。
+        // １、繰り返し構文で1~10までの数字を足してみよう。
+        // もし、すべて足した値が20以上なら、consoleログに「20以上」と出力。
+        // 20未満なら20未満と出力しよう。
 
         let num = 1;
-        while (num < 20) {
+        let result = 0;
+        while (num <= 10) {
+            result = result + num;
             num = num + 1;
-            if (num < 20) {
-                console.log('20以上');
-            } else {
-                console.log('20未満');
-
-            }
+            console.log(result)
+        }
+        if (result >= 20) {
+            console.log('20以上');
+        } else {
+            console.log('20未満');
         }
 
     </script>
