@@ -46,6 +46,10 @@ img {
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ヘッダー */
 body {
   background: #e8d9bf;
@@ -117,6 +121,7 @@ header {
   max-width: 1000px;
   margin: 93px auto 0;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .about_us_img {
@@ -141,7 +146,6 @@ header {
 }
 
 .p5 {
-  width: 410px;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -166,21 +170,21 @@ header {
   margin-left: 50px;
 }
 
-.card-img {
+.card {
+  width: 30%;
   border-radius: 0 41px 0 0;
   overflow: hidden;
 }
 
-.card {
+.card-img {
   position: relative;
-  width: 30%;
 }
 
 .card-title {
   font-size: 38px;
   color: #d30202;
   position: absolute;
-  top: 60%;
+  top: 93%;
   left: 4%;
 }
 
@@ -206,6 +210,7 @@ header {
 
 #event {
   margin: 56px auto 29px;
+  padding: 0 10px;
 }
 
 .event_logo {
@@ -261,7 +266,7 @@ iframe {
 
 footer {
   background: #fff;
-  padding: 75px 0 0;
+  padding: 75px 10px 0;
   position: relative;
 }
 
