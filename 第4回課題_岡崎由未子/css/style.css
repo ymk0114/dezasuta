@@ -122,6 +122,7 @@ header {
   margin: 93px auto 0;
   justify-content: space-between;
   padding: 0 10px;
+  align-items: flex-start;
 }
 
 .about_us_img {
@@ -294,7 +295,7 @@ footer {
 
 .page_top {
   width: 125px;
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  bottom: 40px;
   right: 40px;
 }
