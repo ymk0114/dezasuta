@@ -127,22 +127,18 @@
             <img src="./images/gallery@2x.png" alt="gallery">
         </p>
         <div class="pc_gallery_slider">
-            <div class="pc_gallery_photo">
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_05-100.jpg" alt="gallery05"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_04-100.jpg" alt="gallery04"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_03-100.jpg" alt="gallery03"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_02-100.jpg" alt="gallery02"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_01-100.jpg" alt="gallery01"></div>
-            </div>
-            <div class="pc_gallery_photo">
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_05-100.jpg" alt="gallery05"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_04-100.jpg" alt="gallery04"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_03-100.jpg" alt="gallery03"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_02-100.jpg" alt="gallery02"></div>
-                <div class="pc_gallery_img"><img src="./images/pc_gallary_01-100.jpg" alt="gallery01"></div>
-            </div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_05-100.jpg" alt="gallery05"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_04-100.jpg" alt="gallery04"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_03-100.jpg" alt="gallery03"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_02-100.jpg" alt="gallery02"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_01-100.jpg" alt="gallery01"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_05-100.jpg" alt="gallery05"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_04-100.jpg" alt="gallery04"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_03-100.jpg" alt="gallery03"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_02-100.jpg" alt="gallery02"></div>
+            <div class="pc_gallery_img"><img src="./images/pc_gallary_01-100.jpg" alt="gallery01"></div>
         </div>
-        <div class="sp_gallery_slider">
+        <!-- <div class="sp_gallery_slider">
             <div class="sp_gallery_photo">
                 <div class="sp_gallery_img"><img src="./images/pc_gallary_05-100.jpg" alt="gallery05"></div>
                 <div class="sp_gallery_img"><img src="./images/pc_gallary_04-100.jpg" alt="gallery04"></div>
@@ -157,7 +153,7 @@
                 <div class="sp_gallery_img"><img src="./images/pc_gallary_02-100.jpg" alt="gallery02"></div>
                 <div class="sp_gallery_img"><img src="./images/pc_gallary_01-100.jpg" alt="gallery01"></div>
             </div>
-        </div>
+        </div> -->
 
 
     </section>
@@ -229,17 +225,26 @@
             $('.pc_gallery_slider').slick({
                 // autoplay: true,
                 autoplaySpeed: 2000,
-                dots: true,
+                // dots: true,
                 arrows: true,
-                // slidesToShow: 5,
-                // slidesToScroll: 1,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+
+                        }
+                    }
+                ]
             });
-            $('.sp_gallery_slider').slick({
-                // autoplay: true,
-                autoplaySpeed: 2000,
-                dots: true,
-                arrows: true,
-            });
+            // $('.sp_gallery_slider').slick({
+            //     // autoplay: true,
+            //     autoplaySpeed: 2000,
+            //     dots: true,
+            //     arrows: true,
+            // });
 
         })
     </script>

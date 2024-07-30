@@ -212,6 +212,24 @@ header {
   letter-spacing: 0.1em;
 }
 
+@media screen and (max-width: 1100px) {
+  .p1 {
+    font-size: 17px;
+  }
+  .p2 {
+    font-size: 57px;
+  }
+  .p3 {
+    font-size: 16px;
+  }
+  .p4 {
+    font-size: 38px;
+  }
+  .p5 {
+    font-size: 14px;
+  }
+}
+
 /* sp版lead */
 @media screen and (max-width: 767px) {
   #pc_lead {
@@ -279,7 +297,7 @@ header {
   font-size: 16px;
   line-height: 1.6;
 }
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
   .p1 {
     font-size: 17px;
   }
@@ -295,7 +313,7 @@ header {
   .p5 {
     font-size: 14px;
   }
-}
+} */
 
 @media screen and (max-width: 767px) {
   #about_us {
@@ -381,8 +399,8 @@ header {
 
 @media screen and (max-width: 767px) {
   #menu {
-    max-width: 300px;
-    margin: 52px auto 88px;
+    max-width: 100%;
+    margin: 52px 0 88px;
   }
 
   .menu_logo {
@@ -391,6 +409,8 @@ header {
 
   .menu_list {
     display: block;
+    margin-right: 9%;
+    margin-left: 9%;
   }
 
   .card + .card {
@@ -400,7 +420,16 @@ header {
 
   .card {
     margin: 0 auto;
-    width: 300px;
+    width: 84%;
+    /* width: 100%; */
+  }
+
+  .card-title {
+    font-size: 40px;
+    color: #d30202;
+    position: absolute;
+    top: 96%;
+    left: 4%;
   }
 }
 
@@ -429,11 +458,11 @@ header {
 
 .pc_gallery_slider .slick-prev {
   z-index: 100;
-  left: 415px;
+  left: 20%;
 }
 
 .pc_gallery_slider .slick-next {
-  right: 415px;
+  right: 20%;
 }
 
 .pc_gallery_slider .slick-prev:before {
@@ -469,8 +498,21 @@ header {
 } */
 
 @media screen and (max-width: 767px) {
-  .pc_gallery_slider {
+  /* .pc_gallery_slider {
     display: none;
+  } */
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .pc_gallery_slider .slick-prev {
+    /* z-index: 100; */
+    left: 6%;
+  }
+
+  .pc_gallery_slider .slick-next {
+    right: 6%;
   }
 
   .sp_gallery_slider {
@@ -573,7 +615,7 @@ header {
   }
 
   .event-list {
-    max-width: 335px;
+    /* max-width: 335px; */
     background: #fff;
     border: 3px solid;
     border-color: #4f260b;
@@ -590,7 +632,7 @@ header {
   }
 
   .event-list ul li .event-text {
-    max-width: 328px;
+    max-width: 278px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
